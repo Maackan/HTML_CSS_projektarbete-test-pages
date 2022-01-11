@@ -1,0 +1,156 @@
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+  }
+
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 70vh 45vh;
+    grid-template-rows: auto;
+    grid-gap: 10px 10px;
+    padding: 10px;
+    column-gap: 10%;
+
+    @include for-phone-only{
+        grid-template-columns: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+}
+
+.grid-item{
+    position: relative;
+    background-color: rgba(169, 142, 182, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.2s;
+
+    & img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    @include for-phone-only{
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        img{
+            min-height: 300px;
+            max-height: 300px;
+            min-width: 200px;
+            max-width: 200px;
+        }
+    }
+}
+
+
+.grid-item:hover{
+    background-color: rgba(169, 142, 182, 0.6);
+}
+
+
+.single-item{
+    margin-top: 0px;
+    margin-left: 50vh
+}
+
+.mySlides {
+    
+}
+
+.button-left{
+    position:absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.button-right{
+    position:absolute;
+    top: 40%;
+    right: 10%;
+}
+.btn-style{
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.right-info-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(169, 142, 182, 0.6);
+    margin-right: 20%;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+}
+
+.right-info-content{
+    border: 2px solid black;
+    background: blanchedalmond;
+    margin: 30px;
+}
+
+.card{
+    background-color: rgba(169, 142, 182, 0);
+    border:none;
+    width: 18rem;
+
+    & .card-body{
+       
+    }
+
+    & .card-title{
+        border-bottom: 2px solid black;
+        text-align: center;
+        font-size: xx-large;
+        color:rgba(245, 245, 245, 0.9)
+    }
+
+    & .card-header{
+        background-color: rgba(0, 0, 0, 0);
+        border-bottom: 2px solid black;
+        color:rgba(245, 245, 245, 0.9);
+        text-align: center;
+        font-size: x-large;
+    }
+
+    & .list-group{
+        
+        & li{
+            border-bottom: 2px solid black;
+            background-color: rgba(169, 142, 182, 0);
+            color:rgba(245, 245, 245, 0.9);
+            text-align: center;
+            font-size: x-large;
+        }
+    }
+
+    & .card-text{
+        border-bottom: 8px double black;
+        border-top: 2px inset black;
+        color:rgba(245, 245, 245, 0.9);
+        text-align: center;
+        font-size: x-large;
+        overflow: auto;
+    }
+
+    & .btn{
+        border: 2px solid black;
+    }
+}
+
+

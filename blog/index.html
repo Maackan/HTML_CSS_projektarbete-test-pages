@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="blog-styles.css">
+    <script src="blog-js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/navmenu.js"></script>
+    <script src="https://kit.fontawesome.com/14be2e1f18.js" crossorigin="anonymous"></script>
+
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<title>Shirt Shop - Blog</title>
+</head>
+
+<body onload="NavHighlight(), Page()"  data-bs-spy="scroll" data-bs-target="#bNav" data-bs-offset="180" class="scrollspy-example" tabindex="0">
+    <header>
+        <nav id="nav">
+            <span id="slider"></span>
+            <ul id="nav-list">
+                <li>
+                    <div class="nav-brand">
+                        <a href="/index.html">Home</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="/blog/index.html">Blog</a>
+                </li>
+                <li>
+                    <a href="/product/index.html">Products</a>
+                </li>
+                <li>
+                    <a href="/contacts/index.html">Contact</a>
+                </li>
+                <li>
+                    <a href="/contributors/index.html">Contributors</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <div class="sticky" onclick="ToggleNav(), ToggleScrollNav()"><i class="fas fa-bars fa-3x drwr"></i></div>
+
+        <section>
+            <main class="container">
+                    <div class="blob">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                            <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color: rgb(254, 0, 242);"></stop>
+                                <stop offset="100%" style="stop-color: rgb(251, 2, 128);"></stop>
+                            </linearGradient>
+                            </defs>
+                            <path  fill="url(#gradient)">
+                                <animate attributeName="d"
+                                dur="15000ms"
+                                repeatCount="indefinite"
+        
+                                values="
+                                M426.5,312Q398,374,340,402.5Q282,431,218.5,423Q155,415,97.5,371Q40,327,44,251.5Q48,176,94,117.5Q140,59,215.5,38Q291,17,341,74.5Q391,132,423,191Q455,250,426.5,312Z;
+                                
+                                M433,306.5Q384,363,336.5,416Q289,469,221,443Q153,417,110.5,366.5Q68,316,57,246Q46,176,97.5,125.5Q149,75,215.5,71.5Q282,68,355.5,84Q429,100,455.5,175Q482,250,433,306.5Z;
+                                
+                                M453,318.5Q413,387,350,424Q287,461,222.5,435Q158,409,102.5,366.5Q47,324,51.5,252Q56,180,93.5,112Q131,44,207.5,50Q284,56,343.5,88.5Q403,121,448,185.5Q493,250,453,318.5Z;
+        
+                                M419,318Q412,386,347,408Q282,430,209,439Q136,448,84,388.5Q32,329,45.5,254.5Q59,180,110.5,139Q162,98,227,54.5Q292,11,356,59.5Q420,108,423,179Q426,250,419,318Z;
+        
+                                M442,329Q438,408,361,426Q284,444,205,454Q126,464,103,388Q80,312,76.5,248.5Q73,185,99.5,110.5Q126,36,209,24.5Q292,13,349.5,65.5Q407,118,426.5,184Q446,250,442,329Z;
+        
+                                M448.5,325Q429,400,359.5,439.5Q290,479,214.5,460.5Q139,442,80.5,387.5Q22,333,27.5,252Q33,171,89.5,120.5Q146,70,214.5,65.5Q283,61,334.5,98.5Q386,136,427,193Q468,250,448.5,325Z;
+                                
+                                M426.5,312Q398,374,340,402.5Q282,431,218.5,423Q155,415,97.5,371Q40,327,44,251.5Q48,176,94,117.5Q140,59,215.5,38Q291,17,341,74.5Q391,132,423,191Q455,250,426.5,312Z;
+                                "></animate>
+                            </path>
+                        </svg>
+                    </div>
+                    <!--Glow Effects-->
+                    <div class="blob">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                            <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color: rgb(254, 0, 242);"></stop>
+                                <stop offset="100%" style="stop-color: rgb(251, 2, 128);"></stop>
+                            </linearGradient>
+                            </defs>
+                            <path  fill="url(#gradient)">
+                                <animate attributeName="d"
+                                dur="15000ms"
+                                repeatCount="indefinite"
+        
+                                values="
+                                M426.5,312Q398,374,340,402.5Q282,431,218.5,423Q155,415,97.5,371Q40,327,44,251.5Q48,176,94,117.5Q140,59,215.5,38Q291,17,341,74.5Q391,132,423,191Q455,250,426.5,312Z;
+                                
+                                M433,306.5Q384,363,336.5,416Q289,469,221,443Q153,417,110.5,366.5Q68,316,57,246Q46,176,97.5,125.5Q149,75,215.5,71.5Q282,68,355.5,84Q429,100,455.5,175Q482,250,433,306.5Z;
+                                
+                                M453,318.5Q413,387,350,424Q287,461,222.5,435Q158,409,102.5,366.5Q47,324,51.5,252Q56,180,93.5,112Q131,44,207.5,50Q284,56,343.5,88.5Q403,121,448,185.5Q493,250,453,318.5Z;
+        
+                                M419,318Q412,386,347,408Q282,430,209,439Q136,448,84,388.5Q32,329,45.5,254.5Q59,180,110.5,139Q162,98,227,54.5Q292,11,356,59.5Q420,108,423,179Q426,250,419,318Z;
+        
+                                M442,329Q438,408,361,426Q284,444,205,454Q126,464,103,388Q80,312,76.5,248.5Q73,185,99.5,110.5Q126,36,209,24.5Q292,13,349.5,65.5Q407,118,426.5,184Q446,250,442,329Z;
+        
+                                M448.5,325Q429,400,359.5,439.5Q290,479,214.5,460.5Q139,442,80.5,387.5Q22,333,27.5,252Q33,171,89.5,120.5Q146,70,214.5,65.5Q283,61,334.5,98.5Q386,136,427,193Q468,250,448.5,325Z;
+                                
+                                M426.5,312Q398,374,340,402.5Q282,431,218.5,423Q155,415,97.5,371Q40,327,44,251.5Q48,176,94,117.5Q140,59,215.5,38Q291,17,341,74.5Q391,132,423,191Q455,250,426.5,312Z;
+                                "></animate>
+                            </path>
+                        </svg>
+                    </div>
+
+
+
+                    <!-- <div class="bg-shape1">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <linearGradient id="gradient1" x1="0%" y1="100%" x2="75%" y2="0%">
+                                <stop offset="0%" style="stop-color: #ffbc00;"></stop>
+                                <stop offset="100%" style="stop-color: #ff0058;"></stop>
+                            </linearGradient>
+                            <path fill="url(#gradient1)" d="" transform="translate(100 100)">
+                                <animate attributeName="d"
+                                dur="20000ms"
+                                repeatCount="indefinite"
+        
+                                values="
+                                M48.7,-48.7C59.5,-38,62,-19,55.6,-6.4C49.2,6.2,33.9,12.4,23.1,12.7C12.4,13.1,6.2,7.6,-0.3,7.9C-6.9,8.2,-13.7,14.4,-14.3,14.1C-14.8,13.7,-8.9,6.9,-10,-1.1C-11.1,-9,-19.1,-18,-18.6,-28.8C-18,-39.6,-9,-52.1,5,-57.1C19,-62.1,38,-59.5,48.7,-48.7Z;
+                                M49.4,-53.2C58.8,-40,57.6,-20,50.9,-6.6C44.3,6.7,32.2,13.4,22.8,17.6C13.4,21.9,6.7,23.6,-1,24.7C-8.7,25.7,-17.5,25.9,-29.5,21.7C-41.6,17.5,-57,8.7,-56.1,0.9C-55.2,-7,-38,-13.9,-26,-27.1C-13.9,-40.3,-7,-59.8,6.5,-66.3C20,-72.9,40,-66.4,49.4,-53.2Z;
+                                M48.7,-48.7C59.5,-38,62,-19,55.6,-6.4C49.2,6.2,33.9,12.4,23.1,12.7C12.4,13.1,6.2,7.6,-0.3,7.9C-6.9,8.2,-13.7,14.4,-14.3,14.1C-14.8,13.7,-8.9,6.9,-10,-1.1C-11.1,-9,-19.1,-18,-18.6,-28.8C-18,-39.6,-9,-52.1,5,-57.1C19,-62.1,38,-59.5,48.7,-48.7Z;
+                                "></animate>
+                            </path>
+                        </svg>
+                    </div>                    
+                    <div class="bg-shape1">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <linearGradient id="gradient1" x1="0%" y1="100%" x2="75%" y2="0%">
+                                <stop offset="0%" style="stop-color: #ffbc00;"></stop>
+                                <stop offset="100%" style="stop-color: #ff0058;"></stop>
+                            </linearGradient>
+                            <path fill="url(#gradient1)" d="" transform="translate(100 100)">
+                                <animate attributeName="d"
+                                dur="20000ms"
+                                repeatCount="indefinite"
+        
+                                values="
+                                M48.7,-48.7C59.5,-38,62,-19,55.6,-6.4C49.2,6.2,33.9,12.4,23.1,12.7C12.4,13.1,6.2,7.6,-0.3,7.9C-6.9,8.2,-13.7,14.4,-14.3,14.1C-14.8,13.7,-8.9,6.9,-10,-1.1C-11.1,-9,-19.1,-18,-18.6,-28.8C-18,-39.6,-9,-52.1,5,-57.1C19,-62.1,38,-59.5,48.7,-48.7Z;
+                                M49.4,-53.2C58.8,-40,57.6,-20,50.9,-6.6C44.3,6.7,32.2,13.4,22.8,17.6C13.4,21.9,6.7,23.6,-1,24.7C-8.7,25.7,-17.5,25.9,-29.5,21.7C-41.6,17.5,-57,8.7,-56.1,0.9C-55.2,-7,-38,-13.9,-26,-27.1C-13.9,-40.3,-7,-59.8,6.5,-66.3C20,-72.9,40,-66.4,49.4,-53.2Z;
+                                M48.7,-48.7C59.5,-38,62,-19,55.6,-6.4C49.2,6.2,33.9,12.4,23.1,12.7C12.4,13.1,6.2,7.6,-0.3,7.9C-6.9,8.2,-13.7,14.4,-14.3,14.1C-14.8,13.7,-8.9,6.9,-10,-1.1C-11.1,-9,-19.1,-18,-18.6,-28.8C-18,-39.6,-9,-52.1,5,-57.1C19,-62.1,38,-59.5,48.7,-48.7Z;
+                                "></animate>
+                            </path>
+                        </svg>
+                    </div>   -->
+
+
+                    
+
+
+                <div class="blog-page-content">
+
+                    <div id="bNav" class="list-group">
+                        <ul>
+                            <li><a class="list-group-item list-group-item-action" href="#box1">Post 1</a></li>
+                            <li><a class="list-group-item list-group-item-action" href="#box2">Post 2</a></li>
+                            <li><a class="list-group-item list-group-item-action" href="#box3">Post 3</a></li>
+                        </ul>
+                    </div>
+
+
+                        <div class="blog-box" id="box1">
+                            <p class="blog-post-1"></p>
+                            <a class="arrow bi bi-chevron-compact-down" id="colbtn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1" onclick="Col(1)"></a>
+                            <p class="blog-post-1-exp collapse hide" id="collapse1"></p>
+                            <a class="arrow bi bi-chevron-compact-up colbtnhide" id="colbtn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1" onclick="Col(1,2)"></a>
+                        </div>
+                    
+                    <div class="blog-box" id="box2">
+                        <p class="blog-post-2"></p>
+                        <a class="arrow bi bi-chevron-compact-down" id="bp2-colbtn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2" onclick="Col(2)"></a>
+                        <p class="blog-post-2-exp collapse hide" id="collapse2"></p>
+                        <a class="arrow bi bi-chevron-compact-up colbtnhide" id="bp2-colbtn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2" onclick="Col(2,2)"></a>
+                    </div>
+
+                    <div class="blog-box" id="box3">
+                        <p class="blog-post-3"></p>
+                        <a class="arrow bi bi-chevron-compact-down" id="bp3-colbtn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" onclick="Col(3)"></a>
+                        <p class="blog-post-3-exp collapse hide" id="collapse3"></p>
+                        <a class="arrow bi bi-chevron-compact-up colbtnhide" id="bp3-colbtn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" onclick="Col(3,2)"></a>
+                    </div>
+
+                        
+                    <div class="page-numbers"> 
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center pagination-lg">
+                            <li class="page-item">
+                        <a class="page-link" onclick="PrevPage()"><</a>
+                            </li>
+                        <li class="page-item p1"><a class="page-link" href="?pg=1" onclick="Page()">1</a></li>
+                        <li class="page-item p2"><a class="page-link" href="?pg=2">2</a></li>
+                        <li class="page-item p3"><a class="page-link" href="?pg=3">3</a></li>
+                        <li class="page-item nextbtn">
+                            <a class="page-link" onclick="NextPage()">></a>
+                        </li>
+                        </ul>
+                    </nav>
+                    </div>
+                </div>
+            </main>
+        </section>
+        
+            <footer>
+                <div class="footer-overlay">
+                  <div class="fc1">
+                    <div class="fc2">
+                      <div class="in-cont">
+                        <p>Copyright &copy; 2022 
+                      
+                      - Design:NINJA & Girl Talk
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+
+</body>
+
+</html>

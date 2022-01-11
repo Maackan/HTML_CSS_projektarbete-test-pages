@@ -1,0 +1,148 @@
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70vh 45vh;
+      grid-template-columns: 70vh 45vh;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 10px 10px;
+  padding: 10px;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+}
+
+@media (max-width: 599px) {
+  .grid-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+.grid-item {
+  position: relative;
+  background-color: rgba(169, 142, 182, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.grid-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+@media (max-width: 599px) {
+  .grid-item {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .grid-item img {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
+
+.grid-item:hover {
+  background-color: rgba(169, 142, 182, 0.6);
+}
+
+.single-item {
+  margin-top: 0px;
+  margin-left: 50vh;
+}
+
+.button-left {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.button-right {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+.btn-style {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.right-info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(169, 142, 182, 0.6);
+  margin-right: 20%;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 50px;
+}
+
+.right-info-content {
+  border: 2px solid black;
+  background: blanchedalmond;
+  margin: 30px;
+}
+
+.card {
+  background-color: rgba(169, 142, 182, 0);
+  border: none;
+  width: 18rem;
+}
+
+.card .card-title {
+  border-bottom: 2px solid black;
+  text-align: center;
+  font-size: xx-large;
+  color: rgba(245, 245, 245, 0.9);
+}
+
+.card .card-header {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 2px solid black;
+  color: rgba(245, 245, 245, 0.9);
+  text-align: center;
+  font-size: x-large;
+}
+
+.card .list-group li {
+  border-bottom: 2px solid black;
+  background-color: rgba(169, 142, 182, 0);
+  color: rgba(245, 245, 245, 0.9);
+  text-align: center;
+  font-size: x-large;
+}
+
+.card .card-text {
+  border-bottom: 8px double black;
+  border-top: 2px inset black;
+  color: rgba(245, 245, 245, 0.9);
+  text-align: center;
+  font-size: x-large;
+  overflow: auto;
+}
+
+.card .btn {
+  border: 2px solid black;
+}
+/*# sourceMappingURL=item.css.map */

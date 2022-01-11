@@ -1,0 +1,233 @@
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+  }
+
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(37,8,33,1) 15%,
+    rgba(73,106,129,1) 47%, 
+    rgba(100,145,149,1) 85%);
+}
+
+#prod-list {
+    list-style-type: none;
+}
+
+.sidebar-plus-content{
+    display:inline-block;
+
+    @include for-phone-only{
+        margin-left: 1%;
+        width: 50%;
+    }
+}
+
+#nav-sidebar h2{
+    margin-top: 0px;
+    text-align:center;
+}
+#nav-brand{
+   margin: 0;
+   padding-top: 30px;
+}
+
+#sidebar-list{
+    display: block;
+    list-style-type: none;
+    margin: 65px 0px 0px 0px;
+    padding: 0px;
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, .25);
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, .3);
+
+    & li{
+        text-align: center;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    & a{
+        display: block;
+        color:rgba(255, 255, 255, 0.9);
+        height: 100px;
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    & .content p{
+        margin: 0;
+        padding: 30px;
+    }
+  
+
+    & .content{
+        opacity: 0.75;
+        transition: .6s;
+        transition-timing-function: ease;
+    }
+
+    & .current{
+        opacity: 1;
+        background-color: rgba(255, 255, 255, .2);
+        border-radius: 35px;
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, .3);
+    }
+
+    @include for-phone-only{
+        height: 50%;
+        width: 185%;
+        position: static;
+        overflow: hidden;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        li{
+            height: 100%;
+        }
+        a{
+            height: 100%;
+            font-size: 15px;
+        }
+        .content p{
+            padding: 15px;
+        }
+
+    }
+}
+
+#sidebar-list:hover .content{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 35px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, .3);
+}
+
+.main-content{
+    margin-top: 65px;
+    margin-left: 21%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px 10px;
+    padding: 10px;
+    
+    @include for-phone-only{
+        grid-template-columns: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+.grid-item{
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5%;
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.2s;
+
+    & img{
+        min-height: 500px;
+        max-height: 500px;
+        min-width: 400px;
+        max-width: 400px;
+    }
+
+    @include for-phone-only{
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 1%;
+        
+
+        img{
+            min-height: 300px;
+            max-height: 300px;
+            min-width: 200px;
+            max-width: 200px;
+        }
+    }
+}
+.grid-item:hover{
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 10%;
+    background-color: #bba0b23b;
+}
+
+
+.grid-info-box{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    overflow:auto;
+}
+.tag-info{
+    display: inline-block;
+    padding: 0;
+    margin-right: 0;
+    font-size: 25px;
+    height: 2em;
+    color: rgba(255, 255, 255, 0.9);
+    
+}
+.price-tag{
+    display: inline-block;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
+}
+
+.carousel{
+    // Position settings
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 25px;
+    
+    // Other
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    
+    & .carousel-inner{
+        border: 3px solid black;
+        border-radius: 50px;
+        padding-left: 35%;
+    }
+    & img{
+        max-width: 40%;
+        max-height: 200px;
+        height: 200px;
+    }
+
+    @include for-phone-only{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+
+        .carousel-inner{
+            padding-left: 25%;
+        }
+        img{
+            max-width: 70%;
+            max-height: 150px;
+            height: 150px;
+        }
+    }
+}
+

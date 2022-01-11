@@ -1,0 +1,267 @@
+.blog-page-content{
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 20px;
+}
+
+section{
+    margin-top: 0 !important;
+}
+
+.blog-box{
+    font-size: 1.2rem;
+    padding: 34px;
+    color: #000;
+    background: rgba(255, 255, 255, .1);
+    text-align: center;
+    width: auto;
+    max-width: 800px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-bottom: 10px;
+
+    padding-top: 70px;
+
+    background: rgba(255, 255, 255, 0);
+    box-shadow: -10px 20px 30px 5px rgba(0, 0, 0, .16) inset;
+    border-radius: 18px;
+    z-index: 1;
+    transition: 0.5s;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255,0);
+}
+
+.open{
+    backdrop-filter: blur(10px);
+    box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, .25);
+    background: rgba(255, 255, 255, .02);
+    border-color: rgba(255, 255, 255,.05);
+}
+
+
+.page-numbers{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-link{
+    cursor: pointer;
+}
+
+.arrow{
+    position:static;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, .2);
+    transition: .3s;
+}
+.arrow:hover{
+    color: rgba(255, 255, 255, .8);
+}
+
+.short-blog{
+    text-overflow: ellipsis;
+}
+
+.colbtnhide{
+    display: none !important;
+}
+
+.container{
+    margin-top: 65px;
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .Scroll-Nav-Hide{
+        opacity: 0;
+        z-index: 0 !important;
+    }
+
+    .Text-Fade-Toggle{
+        opacity: .2;
+        filter: blur(10px);
+    }
+
+    .toggle-show{
+        background-color: rgb(26, 5, 23);
+    }
+
+    #nav-list{
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, .5);
+    }
+
+    .blog-page-content{
+        box-sizing: border-box;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    .blog-box{
+        padding-left:23px;
+        padding-right:23px;
+    }
+
+    p{
+        font-size: 1.05rem;
+        transition: .3s;
+    }
+
+    #bNav{
+        top: 15px !important;
+        left: 23% !important;
+        z-index: 99;
+        transition: .3s;
+    }
+    #bNav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .list-group{
+        flex-direction: row;
+    }
+
+    .page-numbers{
+        margin-bottom: 25px;
+    }
+
+}
+
+/*bootstrap stuff*/
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #250821;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #250821;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: rgba(255, 255, 255, .05) !Important;
+    border: solid 1px rgba(255, 255, 255, 0) !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #31152e !Important;
+    border: solid 1px #5A4181;
+}
+
+/*Background*/
+
+@media screen and (max-width: 1000px){
+
+    .blob{
+        display: none;
+    }
+
+}
+
+.blob{
+    z-index: -1;
+}
+
+.bg-shape1
+{
+    position:absolute;
+    width: 500px;
+    height: 500px;
+    right: 500px;
+    top: 150px;
+}
+
+
+.bg-shape1:nth-child(3)
+{
+    animation: glow 10s ease-in-out infinite alternate-reverse;
+    
+}
+
+@keyframes glow {
+    0%{
+        filter: blur(20px);
+    }
+
+    100%{
+        filter: blur(50px);
+    }
+}
+
+
+/*ScrollSpy*/
+
+
+@media screen and (max-width: 1790px){
+    #bNav{
+        right: 15% !important;
+    }
+}
+@media screen and (max-width: 1547px){
+    #bNav{
+        right: 10% !important;
+    }
+}
+@media screen and (max-width: 1347px){
+    #bNav{
+        right: 2% !important;
+    }
+}
+@media screen and (max-width: 1160px){
+    #bNav{
+        right: 0 !important;
+    }
+}
+@media screen and (max-width: 1079px){
+    #bNav{
+        right: -35px !important;
+    }
+}
+@media screen and (max-width: 805px){
+    #bNav{
+        right: -55px !important;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .list-group-item.active{
+        font-size: 1.2rem;
+    }
+}
+
+#bNav{
+    position: fixed;
+    right: 20%;
+    top: 40%;
+}
+
+#bNav ul{
+  list-style: none;
+}
+
+.list-group{
+    padding-right: 50px;
+}
+
+.list-group-item.active{
+    color: rgba(255, 255, 255, 1) !important;
+}
+.list-group-item{
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: rgba(255, 255, 255, .1) !important;
+}

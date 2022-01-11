@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  background-color: #250821 !important;
+}
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+  background-color: #704b7b !important;
+}
+.card-title {
+  color: honeydew;
+}
+.card-text {
+  color: honeydew;
+}
+
+/*grid in index*/
+.glow {
+  grid-area: glow;
+}
+.main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 1fr 1fr 1fr auto;
+  grid-template-areas:
+    "glow glow"
+    "card card"
+    "card card"
+    "divider divider";
+}
+
+/*mobile*/
+@media screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .card {
+    width: 20rem;
+    height: 10rem;
+    text-align: left;
+  }
+  .card-body {
+    font-size: 0.8rem;
+  }
+  .container {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .wrapper {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .wrapper img {
+    height: fit-content !important;
+    width: auto;
+  }
+  .container img {
+    padding: 1rem;
+  }
+}
+/*desktop*/
+@media (min-width: 600px) {
+  .wrapper {
+    display: grid !important;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "person a-text"
+      "divider divider"
+      "hobby-pic hobby-pic";
+  }
+  .a-text {
+    font-size: 1.5rem;
+  }
+}
+
+/*animation*/
+.glow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  font-size: auto;
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px fuchsia,
+      0 0 40px fuchsia, 0 0 50px fuchsia, 0 0 60px fuchsia, 0 0 70px fuchsia;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue,
+      0 0 60px blue, 0 0 70px blue, 0 0 80px blue;
+  }
+}
+
+/*grid in person pages*/
+.wrapper img {
+  height: 30rem;
+  width: auto;
+  display: flex;
+  justify-self: center;
+  grid-area: person;
+}
+.a-text {
+  color: honeydew;
+  grid-area: a-text;
+}
+#article {
+  color: honeydew;
+  grid-area: art;
+}
+
+.btn-link {
+  position: sticky;
+  top: 5rem;
+  display: flex;
+  justify-content: right;
+}
+
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  grid-area: divider;
+}
+#hobby-pic {
+  grid-area: hobby-pic;
+}
+.image-container {
+  background-image: url(/img/hobby-pic.jpg);
+  background-size: cover;
+  position: relative;
+  height: 40vw;
+}
+#jim-hobby {
+  background-image: url(/img/sew.jpg);
+  background-size: cover;
+  position: relative;
+  height: 40vw;
+}
+#leo-hobby {
+  background-image: url(/img/programming.png);
+  background-size: cover;
+  position: relative;
+  height: 40vw;
+}
+#elliot-hobby {
+  background-image: url(/img/ducks.jpg);
+  background-size: cover;
+  position: relative;
+  height: 40vw;
+}
+
+.b-text {
+  background-color: white;
+  color: black;
+  font-size: 8vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    ". glow glow"
+    "bibel love emp"
+    ". . to-top";
+}
+.container img {
+  margin-bottom: 3rem;
+}
+#bibel {
+  grid-area: bibel;
+  height: 20rem;
+}
+#love {
+  grid-area: love;
+}
+#emp {
+  grid-area: emp;
+  height: 20rem;
+}
+.to-top {
+  color: honeydew;
+  padding-top: 1.2rem;
+  display: inline-block;
+  position: relative;
+  border-color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+}
+.to-top:before {
+  content: "▲";
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.7em;
+  border: solid 0.13em white;
+  border-radius: 10em;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.5s ease-in;
+}
+.to-top:hover {
+  color: #704b7b;
+  border-color: #704b7b;
+}
+.to-top:hover:before {
+  transform: rotate(360deg);
+}
